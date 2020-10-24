@@ -20,7 +20,7 @@ a {
   height: 100vh;
   width: 250px;
   width: 75px;
-  background: #303030;
+  background: #222;
   position: fixed;
   z-index: 999;
   top: 0;
@@ -54,24 +54,42 @@ a {
 
 #home {
   height: 100vh;
-  background: url(/img/gray-blue-test.png) no-repeat center center/cover; }
+  background: url(/img/gray-blue-test.png) no-repeat center center/cover;
+  position: relative; }
   #home .title {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: .5rem 0; }
+    justify-content: right;
+    padding: .5rem 0;
+    padding-right: 2rem; }
     #home .title img {
       height: auto;
       width: auto;
       max-height: 100px; }
-    #home .title div h1 {
-      font-size: 2.5rem;
-      color: black; }
-    #home .title div span {
-      float: right;
-      color: black; }
-  #home #home-a {
-    height: 88vh; }
-    #home #home-a h1 {
+    #home .title div {
+      padding-right: 1.5rem; }
+      #home .title div h1 {
+        font-size: 2.5rem;
+        color: white; }
+      #home .title div span {
+        float: right;
+        color: white; }
+  #home #landing-content {
+    margin-top: 45vh; }
+    #home #landing-content h1 {
       color: white;
-      padding: 3rem; }
+      padding: 3rem;
+      font-size: 2.75rem; }
+      #home #landing-content h1 span {
+        color: #0072ae; }
+    #home #landing-content .blink {
+      margin-top: 10vh;
+      text-align: center;
+      color: white;
+      animation: blink 3s linear infinite; }
+      #home #landing-content .blink a {
+        color: white; }
+
+@keyframes blink {
+  50% {
+    opacity: 0; } }

@@ -20,24 +20,36 @@ a {
 
 #main-nav {
     height: 100vh;
-    // width: 250px;
+    width: 250px;
     width: 75px;
     // rgb 48 48 48
     background: $darker-color;
     position: fixed;
     z-index: 999;
     top: 0;
+    // left: -175px;
     left: 0;
     overflow: hidden;
-    padding-top: 8rem;
+    transition: all .5s ease-in-out;
+
+    // Stops nav item text from wrapping and appearing below
+    white-space: nowrap;
     
+    ul {
+        padding-top: 2rem;
+    }
+
     li {
-        // padding-bottom: 3.5rem;
         font-size: 1.5rem;
     }
     
+    span {
+        padding-left: 2rem;
+    }
+
     a {
         display: block;
+        text-align: left;
         color: $light-color;
         transition: all .5s;
         padding: 1.5rem 1.5rem;
@@ -45,6 +57,19 @@ a {
             color: white;
             background: $tertiary-color;
         }
+    }
+
+    &:hover {
+        // left: 0;
+        width: 275px;
+    }
+
+    // logo in nav
+    .nav-logo {
+        height: auto;
+        width: auto;
+        max-height: 70px;
+        padding-top: 2rem;
     }
 }
 

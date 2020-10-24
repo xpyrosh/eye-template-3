@@ -1,6 +1,6 @@
 .container {
-  max-width: 1280px;
-  text-align: center;
+  overflow: hidden;
+  padding-left: 75px;
   margin: auto; }
 
 * {
@@ -42,49 +42,36 @@ a {
     padding: 1.5rem 1.5rem; }
     #main-nav a:hover {
       color: white;
-      background: #25274d; }
-  #main-nav:hover {
-    width: 275px; }
+      background: #29648a; }
   #main-nav .nav-logo {
     height: auto;
     width: auto;
     max-height: 70px;
-    padding-top: 2rem; }
+    padding-top: 2rem;
+    transition: all .5s ease-in-out; }
+  #main-nav:hover {
+    width: 275px; }
 
 #home {
   height: 100vh;
-  background: url(/img/bg-1.png) no-repeat center center/cover; }
+  background: url(/img/gray-blue-test.png) no-repeat center center/cover; }
   #home .title {
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding-top: 3rem; }
+    justify-content: center;
+    padding: .5rem 0; }
     #home .title img {
       height: auto;
       width: auto;
-      max-height: 125px; }
+      max-height: 100px; }
     #home .title div h1 {
       font-size: 2.5rem;
-      color: white; }
+      color: black; }
     #home .title div span {
-      float: left;
-      color: white; }
+      float: right;
+      color: black; }
   #home #home-a {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 2rem; }
-    #home #home-a .left h1 {
-      font-size: 2.5rem;
-      padding-left: 3rem;
-      color: #464866;
-      text-align: left; }
-    #home #home-a .right span {
-      color: #0072ae; }
-    #home #home-a .right h1 {
-      font-size: 1.5rem;
-      padding: 0 3rem; }
-    #home #home-a .right .header-img {
-      height: auto;
-      width: auto;
-      max-height: 300px;
-      border-radius: 50%; }
+    height: 88vh; }
+    #home #home-a h1 {
+      color: white;
+      padding: 3rem; }

@@ -1,6 +1,8 @@
 
 .container {
-    max-width: $website-width;
-    text-align: center;
+    // max-width: $website-width;
+    overflow: hidden;
+    padding-left: 75px;
+    // text-align: center;
     margin: auto;
 }

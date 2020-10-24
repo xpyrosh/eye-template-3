@@ -3,6 +3,45 @@
   padding-left: 75px;
   margin: auto; }
 
+.card {
+  background: #f9f9f9;
+  border: 1px solid #cccccc;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  margin-left: 1.5rem;
+  -webkit-filter: drop-shadow(0px 5px 10px #cccccc);
+  filter: drop-shadow(0px 5px 10px #cccccc); }
+  .card h1 {
+    font-size: 2rem;
+    color: #0072ae;
+    padding-bottom: 1rem; }
+  .card h3 {
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+    color: #29648a; }
+  .card p {
+    font-size: 1.2rem;
+    line-height: 1.3; }
+    .card p span {
+      color: #29648a;
+      font-weight: bold; }
+
+.btn-learn {
+  margin-top: 1.5rem;
+  display: block;
+  background: #f8bd7f;
+  color: black;
+  padding: 1rem 2.5rem;
+  border-radius: 25px;
+  transition: all .5s; }
+  .btn-learn:hover {
+    background: #f7b167; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -52,44 +91,52 @@ a {
   #main-nav:hover {
     width: 275px; }
 
-#home {
+#home-a {
   height: 100vh;
   background: url(/img/gray-blue-test.png) no-repeat center center/cover;
   position: relative; }
-  #home .title {
+  #home-a .title {
     display: flex;
     align-items: center;
     justify-content: right;
     padding: .5rem 0;
     padding-right: 2rem; }
-    #home .title img {
+    #home-a .title img {
       height: auto;
       width: auto;
       max-height: 100px; }
-    #home .title div {
+    #home-a .title div {
       padding-right: 1.5rem; }
-      #home .title div h1 {
+      #home-a .title div h1 {
         font-size: 2.5rem;
         color: white; }
-      #home .title div span {
+      #home-a .title div span {
         float: right;
         color: white; }
-  #home #landing-content {
+  #home-a #landing-content {
     margin-top: 45vh; }
-    #home #landing-content h1 {
+    #home-a #landing-content h1 {
       color: white;
       padding: 3rem;
       font-size: 2.75rem; }
-      #home #landing-content h1 span {
+      #home-a #landing-content h1 span {
         color: #0072ae; }
-    #home #landing-content .blink {
+    #home-a #landing-content .blink {
       margin-top: 10vh;
       text-align: center;
       color: white;
       animation: blink 3s linear infinite; }
-      #home #landing-content .blink a {
+      #home-a #landing-content .blink a {
         color: white; }
 
 @keyframes blink {
   50% {
     opacity: 0; } }
+
+#home-b {
+  background: url(/img/webb.png) repeat; }
+  #home-b .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; }
+  #home-b #coverage {
+    margin-right: 1.5rem; }

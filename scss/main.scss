@@ -80,7 +80,7 @@ a {
     }
 }
 
-#home {
+#home-a {
     height: 100vh;
     // background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')no-repeat center center/cover;
     // background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.25)), url('https://images.unsplash.com/photo-1507992781348-310259076fe0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
@@ -151,4 +151,18 @@ a {
         }
     }
         
+}
+
+#home-b {
+    background: url(/img/webb.png) repeat;
+    .container {
+        display: grid;
+        // gap: 2rem;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    // last card needs static margin right
+    #coverage {
+        margin-right: 1.5rem;
+    }
 }

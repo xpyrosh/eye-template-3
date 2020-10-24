@@ -12,6 +12,7 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background: #f9f9f9;
 }
 
 ul {
@@ -223,6 +224,10 @@ a {
             h1 {
                 text-transform: uppercase;
                 padding-bottom: 1rem;
+            }
+
+            .bottom-line {
+                justify-content: right;
             }
         }
     }

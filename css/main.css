@@ -42,6 +42,11 @@
   .btn-learn:hover {
     background: #f5a44f; }
 
+.bottom-line {
+  height: 3px;
+  width: 100px;
+  background: #29648a; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -50,7 +55,8 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  background: #f9f9f9; }
 
 ul {
   list-style-type: none; }
@@ -181,3 +187,5 @@ a {
       #footer .footer-content .locations h1 {
         text-transform: uppercase;
         padding-bottom: 1rem; }
+      #footer .footer-content .locations .bottom-line {
+        justify-content: right; }

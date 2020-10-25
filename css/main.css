@@ -12,8 +12,7 @@
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  margin: 1.5rem 0;
-  margin-left: 1.5rem;
+  margin: 1.5rem;
   -webkit-filter: drop-shadow(0px 5px 10px #cccccc);
   filter: drop-shadow(0px 5px 10px #cccccc); }
   .card h1 {
@@ -43,9 +42,11 @@
     background: #f5a44f; }
 
 .bottom-line {
-  height: 3px;
-  width: 100px;
-  background: #29648a; }
+  height: 2px;
+  width: 3rem;
+  background: black;
+  display: block;
+  margin: 0 auto 1rem auto; }
 
 * {
   margin: 0;
@@ -156,8 +157,33 @@ a {
       padding: .5rem;
       background: #ededed;
       border-radius: 15px; }
+  #home #home-b #experience {
+    margin-left: 0; }
   #home #home-b #coverage {
-    margin-right: 1.5rem; }
+    margin-left: 0; }
+
+#about #about-a {
+  position: relative;
+  background: url(/img/webb.png) repeat; }
+  #about #about-a .container {
+    position: relative; }
+  #about #about-a img {
+    width: 100%;
+    height: 35vh;
+    justify-content: center;
+    object-fit: cover;
+    box-shadow: 0px 5px 10px #cccccc; }
+  #about #about-a .background .about-phil {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1rem; }
+    #about #about-a .background .about-phil img {
+      height: auto;
+      width: auto;
+      max-width: 200px;
+      border-radius: 15px; }
+    #about #about-a .background .about-phil h2 {
+      padding-bottom: .5rem; }
 
 #footer {
   padding: 3rem;

@@ -16,8 +16,8 @@
     justify-content: space-between;
     display: flex;
     flex-direction: column;
-    margin: 1.5rem 0;
-    margin-left: 1.5rem;
+    margin: 1.5rem;
+    // margin-left: 1.5rem;
 
     -webkit-filter: drop-shadow(0px 5px 10px #cccccc);
     filter: drop-shadow(0px 5px 10px #cccccc);
@@ -62,7 +62,9 @@
 }
 
 .bottom-line {
-    height: 3px;
-    width: 100px;
-    background: $primary-color;
+    height: 2px;
+    width: 3rem;
+    background: black;
+    display: block;
+    margin: 0 auto 1rem auto;
 }

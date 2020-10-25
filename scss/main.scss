@@ -195,10 +195,10 @@ a {
 
 #about {
     // height: 100vh;
+    background: url(/img/webb.png) repeat;
     #about-a {
         position: relative;
-        background: url(/img/webb.png) repeat;
-
+        
         .container {
             position: relative;
         }
@@ -212,27 +212,34 @@ a {
         }
 
         .cards {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            // display: grid;
+            // grid-template-columns: repeat(2, 1fr);
+            margin: 0 5rem;
         }
 
         .background {
             height: 100%;
+            
             .about-phil {
                 display: grid;
                 grid-template-columns: 200px 1fr;
-                gap: 1rem;
-                margin-left: 0;
+                gap: 1.5rem;
+                // margin-left: 0;
 
                 img {
                     height: auto;
                     width: auto;
                     max-width: 200px;
                     border-radius: 15px;
+                    border: 5px #ccc solid;
                 }
 
                 h2 {
                     padding-bottom: .5rem;
+                }
+
+                div {
+                    padding-left: 1rem;
                 }
             }
         }

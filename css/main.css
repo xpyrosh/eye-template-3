@@ -162,34 +162,36 @@ a {
   #home #home-b #coverage {
     margin-left: 0; }
 
-#about #about-a {
-  position: relative;
+#about {
   background: url(/img/webb.png) repeat; }
-  #about #about-a .container {
+  #about #about-a {
     position: relative; }
-  #about #about-a img {
-    width: 100%;
-    height: 35vh;
-    justify-content: center;
-    object-fit: cover;
-    box-shadow: 0px 5px 10px #cccccc; }
-  #about #about-a .cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-  #about #about-a .background {
-    height: 100%; }
-    #about #about-a .background .about-phil {
-      display: grid;
-      grid-template-columns: 200px 1fr;
-      gap: 1rem;
-      margin-left: 0; }
-      #about #about-a .background .about-phil img {
-        height: auto;
-        width: auto;
-        max-width: 200px;
-        border-radius: 15px; }
-      #about #about-a .background .about-phil h2 {
-        padding-bottom: .5rem; }
+    #about #about-a .container {
+      position: relative; }
+    #about #about-a img {
+      width: 100%;
+      height: 35vh;
+      justify-content: center;
+      object-fit: cover;
+      box-shadow: 0px 5px 10px #cccccc; }
+    #about #about-a .cards {
+      margin: 0 5rem; }
+    #about #about-a .background {
+      height: 100%; }
+      #about #about-a .background .about-phil {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 1.5rem; }
+        #about #about-a .background .about-phil img {
+          height: auto;
+          width: auto;
+          max-width: 200px;
+          border-radius: 15px;
+          border: 5px #ccc solid; }
+        #about #about-a .background .about-phil h2 {
+          padding-bottom: .5rem; }
+        #about #about-a .background .about-phil div {
+          padding-left: 1rem; }
 
 #contact .map-test iframe {
   width: 100%; }

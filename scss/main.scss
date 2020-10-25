@@ -85,109 +85,114 @@ a {
     }
 }
 
-#home-a {
-    height: 100vh;
-    // background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')no-repeat center center/cover;
-    // background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.25)), url('https://images.unsplash.com/photo-1507992781348-310259076fe0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-
-    // background: linear-gradient(rgba(0, 114, 174, 0.7),rgba(0, 0, 0, 0.5)),url(/img/alexandru-zdrobau-4bmtMXGuVqo-unsplash.jpg) no-repeat center center/cover;
-
-    background: url(/img/gray-blue-test.png) no-repeat center center/cover;
-
-    position: relative;
-
-    .title {
-        display: flex;
-        align-items: center;
-        justify-content: right;
-        padding: .5rem 0;
-        padding-right: 2rem;
-        // background: #f9f9f9;
-        // background: rgba(0, 0, 0, 0.5);
-
-        img {
-            height: auto;
-            width: auto;
-            max-height: 100px;
-        }
-        div {
-            padding-right: 1.5rem;
-            h1 {
-                font-size: 2.5rem;
-                // color: $darker-color;
-                color: white;
+#home {
+    #home-a {
+        height: 100vh;
+        // background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')no-repeat center center/cover;
+        // background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.25)), url('https://images.unsplash.com/photo-1507992781348-310259076fe0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    
+        // background: linear-gradient(rgba(0, 114, 174, 0.7),rgba(0, 0, 0, 0.5)),url(/img/alexandru-zdrobau-4bmtMXGuVqo-unsplash.jpg) no-repeat center center/cover;
+    
+        background: url(/img/gray-blue-test.png) no-repeat center center/cover;
+    
+        position: relative;
+    
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            padding: .5rem 0;
+            padding-right: 2rem;
+            // background: #f9f9f9;
+            // background: rgba(0, 0, 0, 0.5);
+    
+            img {
+                height: auto;
+                width: auto;
+                max-height: 100px;
             }
-            span{
-                float: right;
-                // color: $eye-color;
-                color: white;
-            }
-        }
-    }
-
-    #landing-content {
-        margin-top: 45vh;
-        
-        h1 {
-            color: white;
-            padding: 3rem;
-            font-size: 2.75rem;
-
-            span {
-                color: $eye-color;
-            }
-        }
-
-        .blink {
-            margin-top: 10vh;
-            text-align: center;
-            color: white;
-            animation: blink 3s linear infinite;
-
-            a {
-                color: white;
-            }
-
-            @keyframes blink {
-                50% {
-                    opacity: 0;
+            div {
+                padding-right: 1.5rem;
+                h1 {
+                    font-size: 2.5rem;
+                    // color: $darker-color;
+                    color: white;
+                }
+                span{
+                    float: right;
+                    // color: $eye-color;
+                    color: white;
                 }
             }
         }
-    }
-        
-}
-
-#home-b {
-    background: url(/img/webb.png) repeat;
-    .container {
-        display: grid;
-        // gap: 2rem;
-        grid-template-columns: 2fr 1fr 1fr;
-    }
-
-    // Our prosthetics needs special formatting for inner content
-    #our-prosthetics {
-        .inner-cols {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1rem;
-            text-align: center;
+    
+        #landing-content {
+            margin-top: 45vh;
             
-            div{
-                padding: .5rem;
-                background: #ededed;
-                border-radius: 15px;
+            h1 {
+                color: white;
+                padding: 3rem;
+                font-size: 2.75rem;
+    
+                span {
+                    color: $eye-color;
+                }
+            }
+    
+            .blink {
+                margin-top: 10vh;
+                text-align: center;
+                color: white;
+                animation: blink 3s linear infinite;
+    
+                a {
+                    color: white;
+                }
+    
+                @keyframes blink {
+                    50% {
+                        opacity: 0;
+                    }
+                }
             }
         }
+            
     }
-
-    // last card needs static margin right
-    #coverage {
-        margin-right: 1.5rem;
+    
+    #home-b {
+        background: url(/img/webb.png) repeat;
+        .container {
+            display: grid;
+            // gap: 2rem;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+    
+        // Our prosthetics needs special formatting for inner content
+        #our-prosthetics {
+            .inner-cols {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+                text-align: center;
+                
+                div{
+                    padding: .5rem;
+                    background: #ededed;
+                    border-radius: 15px;
+                }
+            }
+        }
+    
+        // last card needs static margin right
+        #coverage {
+            margin-right: 1.5rem;
+        }
     }
 }
 
+
+
+// FOOTER
 #footer {
     padding: 3rem;
     box-shadow: 0px 0px 10px #cccccc;

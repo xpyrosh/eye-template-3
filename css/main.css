@@ -124,20 +124,23 @@ a {
         float: right;
         color: white; }
   #home #home-a #landing-content {
-    margin-top: 45vh; }
+    margin-top: 45vh;
+    position: relative; }
     #home #home-a #landing-content h1 {
       color: white;
       padding: 3rem;
       font-size: 2.75rem; }
       #home #home-a #landing-content h1 span {
         color: #0072ae; }
-    #home #home-a #landing-content .blink {
-      margin-top: 10vh;
-      text-align: center;
-      color: white;
-      animation: blink 3s linear infinite; }
-      #home #home-a #landing-content .blink a {
-        color: white; }
+  #home #home-a .blink {
+    position: absolute;
+    left: 45%;
+    bottom: 3%;
+    text-align: center;
+    color: white;
+    animation: blink 3s linear infinite; }
+    #home #home-a .blink a {
+      color: white; }
 
 @keyframes blink {
   50% {

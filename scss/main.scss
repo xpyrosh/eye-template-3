@@ -88,13 +88,7 @@ a {
 #home {
     #home-a {
         height: 100vh;
-        // background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')no-repeat center center/cover;
-        // background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.25)), url('https://images.unsplash.com/photo-1507992781348-310259076fe0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
-    
-        // background: linear-gradient(rgba(0, 114, 174, 0.7),rgba(0, 0, 0, 0.5)),url(/img/alexandru-zdrobau-4bmtMXGuVqo-unsplash.jpg) no-repeat center center/cover;
-    
         background: url(/img/gray-blue-test.png) no-repeat center center/cover;
-    
         position: relative;
     
         .title {
@@ -128,6 +122,7 @@ a {
     
         #landing-content {
             margin-top: 45vh;
+            position: relative;
             
             h1 {
                 color: white;
@@ -138,25 +133,26 @@ a {
                     color: $eye-color;
                 }
             }
-    
-            .blink {
-                margin-top: 10vh;
-                text-align: center;
+        }
+        .blink {
+            // margin-top: 10vh;
+            position: absolute;
+            left: 45%;
+            bottom: 3%;
+            text-align: center;
+            color: white;
+            animation: blink 3s linear infinite;
+
+            a {
                 color: white;
-                animation: blink 3s linear infinite;
-    
-                a {
-                    color: white;
-                }
-    
-                @keyframes blink {
-                    50% {
-                        opacity: 0;
-                    }
+            }
+
+            @keyframes blink {
+                50% {
+                    opacity: 0;
                 }
             }
         }
-            
     }
     
     #home-b {

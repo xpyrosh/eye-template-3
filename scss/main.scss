@@ -100,7 +100,7 @@ a {
         .title {
             display: flex;
             align-items: center;
-            justify-content: right;
+            justify-content: flex-end;
             padding: .5rem 0;
             padding-right: 2rem;
             // background: #f9f9f9;
@@ -228,6 +228,14 @@ a {
                     padding-bottom: .5rem;
                 }
             }
+        }
+    }
+}
+
+#contact {
+    .map-test{
+        iframe {
+            width: 100%;
         }
     }
 }

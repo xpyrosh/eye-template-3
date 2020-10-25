@@ -108,7 +108,7 @@ a {
   #home #home-a .title {
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
     padding: .5rem 0;
     padding-right: 2rem; }
     #home #home-a .title img {
@@ -184,6 +184,9 @@ a {
       border-radius: 15px; }
     #about #about-a .background .about-phil h2 {
       padding-bottom: .5rem; }
+
+#contact .map-test iframe {
+  width: 100%; }
 
 #footer {
   padding: 3rem;

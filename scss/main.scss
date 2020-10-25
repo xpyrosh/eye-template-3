@@ -211,11 +211,18 @@ a {
             box-shadow: 0px 5px 10px #cccccc;
         }
 
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
         .background {
+            height: 100%;
             .about-phil {
                 display: grid;
                 grid-template-columns: 200px 1fr;
                 gap: 1rem;
+                margin-left: 0;
 
                 img {
                     height: auto;

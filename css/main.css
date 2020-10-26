@@ -133,9 +133,7 @@ a {
       #home #home-a #landing-content h1 span {
         color: #0072ae; }
   #home #home-a .blink {
-    position: absolute;
-    left: 45%;
-    bottom: 3%;
+    margin-top: 10vh;
     text-align: center;
     color: white;
     animation: blink 3s linear infinite; }
